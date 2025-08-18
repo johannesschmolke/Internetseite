@@ -1,0 +1,488 @@
+/* roboto-100 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../Internetseite/fonts/roboto-v30-latin-100.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../Internetseite/fonts/roboto-v30-latin-100.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  /* roboto-100italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    src: url('../Internetseite/fonts/roboto-v30-latin-100italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../Internetseite/fonts/roboto-v30-latin-100italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  /* roboto-300 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../Internetseite/fonts/roboto-v30-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../Internetseite/fonts/roboto-v30-latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  /* roboto-300italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../Internetseite/fonts/roboto-v30-latin-300italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../Internetseite/fonts/roboto-v30-latin-300italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Internetseite/fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../Internetseite/fonts/roboto-v30-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  /* roboto-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/roboto-v30-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Internetseite/fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../Internetseite/fonts/roboto-v30-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  /* roboto-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../Internetseite/fonts/roboto-v30-latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../Internetseitefonts/roboto-v30-latin-700italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+
+
+body {
+    font-family: 'Roboto'; 
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Roboto'; 
+    font-weight: 300;
+    font-size: 36px;
+    margin-bottom: 10px
+}
+
+h2 {
+    font-family: 'Roboto'; 
+    font-weight: 100;
+    font-size: 60px;
+    margin-bottom: 20px
+}
+
+h3 {
+    font-family: 'Roboto'; 
+    font-weight: 300;
+    font-size: 26px;
+    margin-bottom: 10px
+}
+
+h4 {
+    font-family: 'Roboto'; 
+    font-weight: 100;
+    font-size: 36px;
+    margin-bottom: 10px
+}
+
+h5 {
+    font-family: 'Roboto'; 
+    font-weight: 100;
+    font-size: 36px;
+    margin-left: 5%;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+header {
+    background: #e6e6e6;
+    color: #fff;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    transition: padding 0.3s, height 0.3s;
+}
+
+header.small {
+    height: 60px;
+    padding-top: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    margin-right: 38px; 
+
+}
+
+.header__nav-link {
+    text-decoration: none;
+    font-size: 17px;
+    color: #000; 
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.header__nav-link:hover {
+    text-decoration: underline; 
+}
+
+.header__social-links {
+    margin-right: 30px;
+}
+
+.header__social-links a {
+    display: inline-block;
+}
+
+.header__social-links svg {
+    width: 100%;
+    height: 100%;
+}
+
+.header__social-links .social-icon-path {
+    transition: fill 0.3s ease;
+    fill: rgb(53, 53, 53); 
+}
+
+.header__social-links a:hover .social-icon-path {
+    fill:rgb(158, 158, 158) 
+}
+
+
+.header__social-links1 {
+    margin-right: 30px;
+    margin-left: 35px;
+}
+
+.header__social-links1 a {
+    display: inline-block;
+}
+
+.header__social-links1 svg {
+    width: 100%;
+    height: 100%;
+}
+
+.header__social-links1 .social-icon-path {
+    transition: fill 0.3s ease;
+    fill: rgb(53, 53, 53); 
+}
+
+.header__social-links1 a:hover .social-icon-path {
+    fill:rgb(158, 158, 158) 
+}
+
+
+
+.header__logo {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+}
+
+.header__logo-image {
+    max-height: 100px; 
+    height: auto; 
+    transition: max-height 0.3s; 
+}
+
+header.small .header__logo-image {
+    max-height: 50px; 
+}
+
+
+main {
+    padding-top: 0;
+    margin-top: 120px;
+}
+
+.banner {
+    position: relative;
+    background-image: url('BildNoten.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    margin-bottom: 60px;
+}
+
+.banner2 {
+    position: relative;
+    background-image: url('Technik.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.banner3 {
+    position: relative;
+    background-image: url('Jumu5.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.801); 
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-content h1 {    
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #161616;
+}
+
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.grau{
+    background-color: #e6e6e6;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: 100%;
+}
+.text-inhalt {
+    flex: 1;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 50%;
+}
+
+.text-breiter {
+    flex: 1;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 80%;
+}
+
+.text-content {
+    flex: 1;
+    padding-left: 7%;
+    max-width: 50%;
+}
+
+.content__image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+}
+
+.content-section h2 {
+    color: #000;
+}
+
+.item-list {
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.Listenüberschrift{
+    width: 100%;
+    margin-left: 5%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.item1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.item-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title {
+    margin: 0 0 1px 0;
+    width: 350px;
+}
+
+.item-buttons {
+    display: flex;
+}
+
+.button1 {
+    background-color: black; 
+    color: white; 
+    border: 1px solid #000000;
+    position: relative;
+    top: 30px;
+    border-radius: 0; 
+    padding: 15px 25px; 
+    cursor: pointer; 
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    margin-right: 15px;
+
+}
+
+.button1:hover {
+    border: 1px solid rgb(95, 95, 95);
+    background-color: rgb(95, 95, 95); 
+}
+
+.button2 {
+    background-color: rgba(0, 0, 0, 0); 
+    color: rgb(0, 0, 0); 
+    border: 1px solid #000000;
+    position: relative;
+    top: 30px;
+    border-radius: 0; 
+    padding: 15px 25px; 
+    cursor: pointer; 
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button2:hover {
+    background-color: rgba(151, 151, 151, 0.5); 
+}
+
+footer {
+    background: rgb(95, 95, 95);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-family: "Roboto";
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo-image {
+    max-height: 100px; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 16px;
+    transition: color 0.3s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer__link:hover {
+    color: #bbb; 
+}
+
+.footer__copyright {
+    margin-top: 20px; 
+    font-size: 16px;
+}
+
+.kontaktformular {
+    width: 100%;
+}
+
+.insta{
+    padding-left: 10%;
+    margin-bottom: 50px;
+}
+
+.yt{
+    margin-left: 50px;
+    max-width: 1000px;
+}
