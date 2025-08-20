@@ -252,7 +252,7 @@ header.small .header__logo-image {
 }
 
 /* Header: Mobile */
-@media (max-width: 700px) {
+@media (max-width: 1169px) {
     .header__nav {
         display: flex;
         align-items: center;
@@ -383,7 +383,7 @@ header.small .header__logo-image {
     position: static;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1169px) {
 
     .menu-toggle { display: block; }
     .mobile-menu-overlay.open{
@@ -645,14 +645,14 @@ footer {
 /* ...existing code... */
 
 /* Standard: Nav-Links ausblenden bei schmalem Bildschirm */
-@media (max-width: 700px) {
+@media (max-width: 1169px) {
     .header__nav-list {
         display: none;
     }
 }
 
 /* Overlay-Menü: Nav-Links immer anzeigen, wenn offen */
-@media (max-width: 700px) {
+@media (max-width: 1169px) {
     .mobile-menu-overlay.open .header__nav-list {
         display: flex !important;
         flex-direction: column;
@@ -663,4 +663,12 @@ footer {
         background: #e6e6e6 !important; /* gleiche Farbe wie Header */
         box-shadow: none !important;
     }
+}
+
+.menu-toggle {
+    color: #333; /* z.B. dunkelgrau, passend zum Design */
+}
+
+.menu-icon {
+    color: #333; /* oder jede gewünschte Farbe */
 }

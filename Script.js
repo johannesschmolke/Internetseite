@@ -9,6 +9,22 @@ function shrinkHeader() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu-overlay');
+    const closeMenu = document.querySelector('.close-menu');
+
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('open');
+        });
+    }
+    if (closeMenu && mobileMenu) {
+        closeMenu.addEventListener('click', function() {
+            mobileMenu.classList.remove('open');
+        });
+    }
+});
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -51,24 +67,8 @@ setInterval(function() {
 }, 15000);
 
 
-// ...existing code...
 
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu-overlay');
-    const closeMenu = document.querySelector('.close-menu');
 
-    if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', function() {
-            mobileMenu.classList.toggle('open');
-        });
-    }
-    if (closeMenu && mobileMenu) {
-        closeMenu.addEventListener('click', function() {
-            mobileMenu.classList.remove('open');
-        });
-    }
-});
 
-// ...existing code...
+
 
