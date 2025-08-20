@@ -225,6 +225,7 @@ header.small {
 
 
 
+
 .header__logo {
     display: flex; 
     align-items: center; 
@@ -240,6 +241,159 @@ header.small {
 header.small .header__logo-image {
     max-height: 50px; 
 }
+
+/* Header: Desktop */
+.header__nav-list {
+    display: flex;
+    gap: 1.5rem;
+}
+.menu-toggle {
+    display: none;
+}
+
+/* Header: Mobile */
+@media (max-width: 700px) {
+    .header__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .header__logo {
+        flex: 1;
+    }
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .header__nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100vw;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        padding: 1rem 0;
+        z-index: 99;
+    }
+    .header__nav-list.open {
+        display: flex;
+    }
+    .header__nav-item {
+        margin: 0.5rem 1rem;
+    }
+.header__social-links-mobile {
+    
+    padding: 1.5rem 0 0.5rem 0;
+    fill: rgb(53, 53, 53); 
+}
+    .header__social-links-mobile a {
+        display: inline-block;
+    }
+    .header__social-links-mobile svg {
+        width: 24px;
+        height: 24px;
+    }
+    .header__social-links-mobile .social-icon-path {
+        fill: rgb(53, 53, 53);
+        transition: fill 0.3s ease;
+    }
+    .header__social-links-mobile a:hover .social-icon-path {
+        fill: rgb(158, 158, 158);
+ 
+
+}
+    .header__social-links1, .header__social-links {
+        display: none; /* Ausblenden der Social Links im Desktop-Header */
+    }
+
+    
+
+}
+
+/* Social-Links Desktop */
+.header__social-links-desktop {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.mobile-menu-overlay {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #e6e6e6;
+    z-index: 1000;
+    padding-top: 80px;
+}
+
+.mobile-menu-overlay.open {
+    display: flex;
+}
+
+.mobile-menu-overlay .close-menu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.mobile-menu-overlay .header__nav-list {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 40px;
+    margin-bottom: auto;
+}
+
+.mobile-menu-overlay .header__nav-item {
+    margin: 1.5rem 0;
+}
+
+.mobile-menu-overlay .header__nav-link {
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.mobile-menu-overlay .header__social-links-mobile {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 33rem;
+    background: none;
+    position: static;
+}
+
+@media (max-width: 700px) {
+
+    .menu-toggle { display: block; }
+    .mobile-menu-overlay.open{
+        display: flex !important;
+    }
+}
+
+
+
+
 
 
 main {
@@ -485,4 +639,28 @@ footer {
 .yt{
     margin-left: 50px;
     max-width: 1000px;
+}
+
+
+/* ...existing code... */
+
+/* Standard: Nav-Links ausblenden bei schmalem Bildschirm */
+@media (max-width: 700px) {
+    .header__nav-list {
+        display: none;
+    }
+}
+
+/* Overlay-Menü: Nav-Links immer anzeigen, wenn offen */
+@media (max-width: 700px) {
+    .mobile-menu-overlay.open .header__nav-list {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 40px;
+        margin-bottom: auto;
+        background: #e6e6e6 !important; /* gleiche Farbe wie Header */
+        box-shadow: none !important;
+    }
 }
