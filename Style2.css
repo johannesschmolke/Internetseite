@@ -3,26 +3,25 @@
 }
 .gallery__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 40px 0;
-    padding-left: 50px;
-    padding-right: 50px;
+    gap: 30px;
+    width: 100%;
 }
 
 @media (max-width: 950px) {
     .gallery__container {
         flex-direction: column;
         align-items: center;
-        gap: 50px;
         height: fit-content;
       
     }
-    .gallery__item {max-width: 300px;}
+    
 }
 
 .gallery__item {
-    width: 430px;
+    width: 100%;
+    max-width: 500px;
     transition: transform 0.5s;
 }
 

@@ -594,8 +594,8 @@ main {
         order: 2;
         width: 100%;
         max-width: 80%;
-       padding-bottom: 80px;
-       padding-top: 20px;
+       padding-bottom: 105px;
+       
 
     }
 }
@@ -642,7 +642,6 @@ main {
 }
 
 .item-title {
-    margin: 0 0 1px 0;
     width: auto;
 }
 
@@ -658,6 +657,23 @@ main {
     margin-bottom: 5px;
     align-items: left;
   }
+  
+}
+
+@media (max-width: 450px) {
+  .item-buttons {
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: left;
+  }
+
+  .item-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+    margin-left: 10px;
+}
   
 }
 
