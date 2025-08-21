@@ -119,6 +119,71 @@ h5 {
     margin-bottom: 30px;
 }
 
+
+
+@media (max-width: 1220px) {
+    body {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 32px;
+    }
+
+    h5 {
+        font-size: 32px;
+        margin-left: 5%;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    
+
+}
+
+@media (max-width: 1050px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 29px;
+    }
+
+    h5 {
+        font-size: 29px;
+        margin-left: 5%;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+
+}
+
 header {
     background: #e6e6e6;
     color: #fff;
@@ -476,6 +541,7 @@ main {
     max-width: 50%;
     padding-left: 5%;
     padding-right: 5%;
+    max-height: 660px;
     
 }
 
@@ -504,11 +570,42 @@ main {
     color: #000;
 }
 
+
+@media (max-width: 950px) {
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .content__image {
+        order: 1;
+        width: 100%;
+        height: auto;
+
+    }
+    .text-content {
+        order: 2;
+        width: 100%;
+       
+
+    }
+
+    .text-inhalt {
+        order: 2;
+        width: 100%;
+        max-width: 80%;
+       padding-bottom: 80px;
+       padding-top: 20px;
+
+    }
+}
+
 .item-list {
     list-style: none;
     margin-top: 0px;
     margin-bottom: 60px;
     padding: 0;
+    width: 100%;
 }
 
 .Listenüberschrift{
@@ -521,6 +618,7 @@ main {
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .item1 {
@@ -540,15 +638,27 @@ main {
 .item-content {
     display: flex;
     flex-direction: column;
+    min-width: 180px;
 }
 
 .item-title {
     margin: 0 0 1px 0;
-    width: 350px;
+    width: auto;
 }
 
 .item-buttons {
-    display: flex;
+    display: inline-flex; /* statt flex → schrumpft auf Inhalt */
+    width: fit-content;   /* passt sich automatisch an */
+    height: fit-content;
+}
+
+@media (max-width: 950px) {
+  .item-buttons {
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: left;
+  }
+  
 }
 
 .button1 {
@@ -566,6 +676,7 @@ main {
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
     margin-right: 15px;
+    margin-bottom: 15px;
 
 }
 
@@ -588,6 +699,8 @@ main {
     font-size: 15px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .button2:hover {
@@ -632,19 +745,9 @@ footer {
     font-size: 16px;
 }
 
-.kontaktformular {
-    width: 100%;
-}
 
-.insta{
-    padding-left: 10%;
-    margin-bottom: 50px;
-}
 
-.yt{
-    margin-left: 50px;
-    max-width: 1000px;
-}
+
 
 
 /* ...existing code... */
@@ -677,3 +780,5 @@ footer {
 .menu-icon {
     color: #333; /* oder jede gewünschte Farbe */
 }
+
+
