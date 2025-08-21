@@ -461,7 +461,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
+    justify-content: space-between;
+    width: 100%;
+}    
 
 .grau{
     background-color: #e6e6e6;
@@ -471,9 +473,10 @@ main {
 }
 .text-inhalt {
     flex: 1;
+    max-width: 50%;
     padding-left: 5%;
     padding-right: 5%;
-    max-width: 50%;
+    
 }
 
 .text-breiter {
@@ -486,13 +489,15 @@ main {
 .text-content {
     flex: 1;
     padding-left: 7%;
-    max-width: 50%;
+    width: 50%;
 }
 
 .content__image {
     flex: 1;
-    max-width: 50%;
-    height: auto;
+    width: 50%;
+    height: 660px;
+    object-fit: cover;
+
 }
 
 .content-section h2 {
