@@ -103,9 +103,9 @@ img {
 
 
 .insta{
-    margin-left: 5%;
+    padding-left: 5%;
    margin-bottom: 80px;
-   margin-right: 5%;
+   padding-right: 5%;
 }
 
 .yt{
@@ -117,8 +117,8 @@ img {
 
 .insta {
 
-  max-width: 400px;  /* auf großen Bildschirmen nicht größer als 500px */
-  aspect-ratio: 9 / 16; /* Verhältnis beibehalten */
+max-width: 400px;  /* auf großen Bildschirmen nicht größer als 500px */
+aspect-ratio: 9 / 16; 
  
 }
 
@@ -141,6 +141,7 @@ img {
 @media (max-width:950px) {
   .insta {
     max-width: 100%;
+    aspect-ratio: 9 / 17; 
   }
 
   .video-container {
